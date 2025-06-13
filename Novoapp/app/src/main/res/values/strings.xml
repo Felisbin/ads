@@ -1,0 +1,8 @@
+<resources>
+    <string name="redefinir_senha">Redefinição de Senha</string>
+    <string name="email_cadastrado">Email Cadastrado</string>
+    <string name="telefone">Telefone</string>
+    <string name="enviar_codigo">Enviar Código</string>
+    <string name="localizacao_atual"> Localização atual: Resende</string>
+
+</resources>

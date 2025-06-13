@@ -1,0 +1,82 @@
+<!-- ScrollView - usado para rolagem vertical, poder rolar para cima e para baixo -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#001E50">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- REMOVIDO: ImageView com fundo arredondado -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Usuário"
+            android:layout_marginTop="24dp"
+            android:inputType="textEmailAddress"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BBBBBB"
+            android:fontFamily="sans-serif-medium" />
+
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Senha"
+            android:layout_marginTop="12dp"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BBBBBB"
+            android:fontFamily="sans-serif-medium" />
+
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/botao_arredondado"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/botao_arredondado"
+            android:textColor="#FFFFFF" />
+
+
+        <TextView
+            android:id="@+id/TextViewForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esqueceu sua senha?"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+</ScrollView>
+

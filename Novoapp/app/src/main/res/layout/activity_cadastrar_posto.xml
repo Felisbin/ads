@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="#001E50">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/txtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do Posto"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/botao_arredondado2"/>
+
+        <EditText
+            android:id="@+id/txtCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cidade do Posto"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/botao_arredondado2"/>
+
+        <CheckBox
+            android:id="@+id/checkDormir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:buttonTint="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:text="Dormir"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkComer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comer"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"
+            android:buttonTint="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"/>
+
+        <CheckBox
+            android:id="@+id/checkBanheirofeminino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Banheiro Feminino"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"
+            android:buttonTint="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"/>
+
+        <CheckBox
+            android:id="@+id/checkBanheiromasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Banheiro Masculino"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"
+            android:buttonTint="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"/>
+
+        <CheckBox
+            android:id="@+id/checkWifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wi-Fi"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"
+            android:buttonTint="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"/>
+
+        <CheckBox
+            android:id="@+id/checkEstacionamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estacionamento"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:buttonTint="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"/>
+
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/botao_arredondado"
+            android:padding="12dp"
+            android:text="Salvar"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkEstacionamento" />
+
+
+    </LinearLayout>
+</ScrollView>

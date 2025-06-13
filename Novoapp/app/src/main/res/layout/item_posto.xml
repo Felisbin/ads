@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nome do Posto"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/icDormir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/txtCidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cidade"
+        android:textSize="14sp"
+        android:textColor="#666"
+        app:layout_constraintTop_toBottomOf="@id/txtNome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/icDormir"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="4dp"/>
+
+
+    <ImageView
+        android:id="@+id/icDormir"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="Ícone Dormir"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/icComer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/icComer"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="Ícone Comer"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/icBanheiro"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/icBanheiro"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="Ícone Banheiro"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/icEstacionar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/icEstacionar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="Ícone Estacionar"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/icBanheiroFeminino"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/icBanheiroFeminino"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="Ícone Banheiro Feminino"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/icBanheiroMasculino"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/icBanheiroMasculino"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="Ícone Banheiro Masculino"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/icWifi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/icWifi"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="Ícone Wi-Fi"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

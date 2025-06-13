@@ -1,0 +1,179 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="24dp"
+    android:background="#001E50">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+<TextView
+
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Criar Conta"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Nome Completo"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BBBBBB"
+        android:fontFamily="sans-serif-medium" />
+
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail Opcional"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BBBBBB"
+        android:fontFamily="sans-serif-medium" />
+
+
+    <EditText
+        android:id="@+id/editTextSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BBBBBB"
+        android:fontFamily="sans-serif-medium" />
+
+
+    <EditText
+        android:id="@+id/editTextConfirmarSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:hint="Confirme a Senha"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BBBBBB"
+        android:fontFamily="sans-serif-medium" />
+    <EditText
+        android:id="@+id/editTextTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefone"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_marginTop="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BBBBBB"
+        android:fontFamily="sans-serif-medium" />
+
+    <CheckBox
+        android:id="@+id/checkFeminino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feminino"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"
+        android:buttonTint="#FFFFFF"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <CheckBox
+        android:id="@+id/checkMasculino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masculono"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"
+        android:buttonTint="#FFFFFF"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <CheckBox
+        android:id="@+id/checkOutros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prefiro não responder"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"
+        android:buttonTint="#FFFFFF"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <EditText
+        android:id="@+id/editTextDataEmissao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data de Emissão da CNH"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BBBBBB"
+        android:fontFamily="sans-serif-medium" />
+
+
+
+    <CheckBox
+        android:id="@+id/checkBoxTermos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceito os Termos de Uso e Política de Privacidade"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#FFFFFF"
+        android:buttonTint="#FFFFFF" />
+
+
+
+    <Button
+        android:id="@+id/buttonCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:background="@drawable/botao_arredondado"
+        android:textColor="#FFFFFF" />
+
+
+
+    <!-- TextView para login com área de toque maior -->
+
+
+    <ImageView
+        android:id="@+id/back_button2"
+        android:layout_width="23dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Voltar"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BBBBBB"
+        android:fontFamily="sans-serif-medium" />
+
+
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título da tela -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="24dp"
+        android:text="@string/redefinir_senha"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Opções de redefinição -->
+    <RadioGroup
+        android:id="@+id/opcaoRedefinicao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/opcaoEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Escolher opção de redefinição por email"
+            android:importantForAccessibility="yes"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:text="@string/email_cadastrado" />
+
+        <RadioButton
+            android:id="@+id/opcaoTelefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Escolher opção de redefinição por telefone"
+            android:importantForAccessibility="yes"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:text="@string/telefone" />
+    </RadioGroup>
+
+    <!-- Input de email ou telefone -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu Email ou Telefone"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Botão para enviar código -->
+    <Button
+        android:id="@+id/enviarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:contentDescription="Enviar código para redefinição de senha"
+        android:text="@string/enviar_codigo" />
+
+    <ImageView
+        android:id="@+id/back_button3"
+        android:layout_width="23dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Voltar"
+        android:src="@drawable/ic_back3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</LinearLayout>

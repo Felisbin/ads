@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "81257534241",
+    "project_id": "novoapp-6db73",
+    "storage_bucket": "novoapp-6db73.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81257534241:android:5b1844f9916f68a24a6460",
+        "android_client_info": {
+          "package_name": "com.example.novoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAJP5XpGS9R1A0Me73rbKxWSYNDSM0feU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
